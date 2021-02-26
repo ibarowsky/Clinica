@@ -3,8 +3,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<% if(session.getAttribute("login") == null || session.getAttribute("login") == "") 
-	response.sendRedirect("Home.html");
+<% if(session.getAttribute("login") == null || session.getAttribute("login") == "")
+	response.sendRedirect("Home.jsp");
 %>
 <meta charset="ISO-8859-1">
 <title>User | Becuba</title>

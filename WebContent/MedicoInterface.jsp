@@ -3,8 +3,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<% if(session.getAttribute("login") == null || session.getAttribute("login") == "") 
-	response.sendRedirect("Home.html");
+<% if(session.getAttribute("login") == null || session.getAttribute("login") == "")
+	response.sendRedirect("Home.jsp");
 %>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,9 +18,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-	<%	
+	<%
 		String doc = MedInterface.BuildMedInterface();
 		out.print(doc);
-	%>	
+	%>
 </body>
 </html>
