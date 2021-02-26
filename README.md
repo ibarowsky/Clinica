@@ -19,11 +19,16 @@ I pattern usati per la creazione di questo progetto sono i seguenti:
 Il Builder Pattern è un pattern creazionale basato su oggetti e viene utilizzato per creare un oggetto senza doverne conoscere i suoi dettagli implementativi.
 Questo pattern consente di utilizzare un Client che non debba essere a conoscenza dei passi necessari al fine della creazione di un oggetto ma tali passaggi vengono delegati ad un Director.
 
-Struttura:
+#### Struttura:
 - Director: costruisce un oggetto partendo dall’interfaccia Builder;
 - Builder: specifica una interfaccia atta alla creazione del Product;
 - ConcreteBuilder: costruisce il Product in base ai metodi definiti nel Builder;
 - Product: rappresenta l’oggetto complesso da costruire;
 
-Implementazione:
-É stato usato per il login sulla web app. Dal momento che ci sono 3 tipi diversi di utenti (admin, medico, utente), il builder ci permette di costruire l’interfaccia semplicemente istanziando l’oggetto che identifica il tipo di utente si sta loggando.
+#### Implementazione:
+É stato usato per il login sulla web app. Dal momento che ci sono 3 tipi diversi di utenti (admin, medico, utente), il builder ci permette di costruire l’interfaccia semplicemente istanziando l’oggetto che identifica il tipo di utente che si sta loggando.
+
+#### Diagramma
+
+#### Riferimenti di codice:
+
