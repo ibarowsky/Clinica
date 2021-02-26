@@ -7,7 +7,7 @@ I medici possono consultare la lista dei tamponi da eseguire nel seguente giorno
 L'amministratore può aggiungere o eliminare un medico e inoltre può stampare liste degli esiti al fine di aiutare l'asl nella raccolta dei contagi.
 Abbia deciso di sviluppare questo progetto su una web app usando un database mysql e il server apache tomcat.
 
-#Note di Sviluppo
+# Note di Sviluppo
 I pattern usati per la creazione di questo progetto sono i seguenti:
 - Builder;
 - Command;
