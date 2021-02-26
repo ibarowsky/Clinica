@@ -15,7 +15,8 @@ I pattern usati per la creazione di questo progetto sono i seguenti:
 - Strategy;
 - MVC;
 
-* Il Builder Pattern è un pattern creazionale basato su oggetti e viene utilizzato per creare un oggetto senza doverne conoscere i suoi dettagli implementativi.
+*Builder Pattern*
+Il Builder Pattern è un pattern creazionale basato su oggetti e viene utilizzato per creare un oggetto senza doverne conoscere i suoi dettagli implementativi.
 Questo pattern consente di utilizzare un Client che non debba essere a conoscenza dei passi necessari al fine della creazione di un oggetto ma tali passaggi vengono delegati ad un Director.
 
 Struttura:
