@@ -25,7 +25,7 @@ public class DeleteDaoMed {
                 String dbpassword=rs.getString("PASSWORD"); 
                 
                 if(fc.equals(dbcf) && password.equals(dbpassword)) {  //apply if condition check for fetchable database username and password are match for user input side type in textbox
-                	 pstmt=con.prepareStatement("DELETE FROM MEDICO(CF,PASSWORD) WHERE CF = ?"); //sql insert query
+                	 pstmt=con.prepareStatement("DELETE FROM MEDICO WHERE CF = ?"); //sql insert query
                      pstmt.setString(1,fc);
                      pstmt.executeUpdate(); //execute query
                       
