@@ -1,0 +1,190 @@
+/* ! Base Style */
+body{font-family: 'Inter', sans-serif; font-size: 16px;}
+a{text-decoration: none;}
+
+h1, h2, h3, h4, h5, p{color: #fff; padding-bottom: 30px;}
+
+.big-text{font-size: 70px;font-weight: bold;}
+.med-text{font-size: 40px;}
+.normal-text{font-size: 20px;}
+.small-text{font-size: 14px;}
+
+.intro-text{text-transform: uppercase;font-size: 20px;font-weight: bold;}
+
+
+/* ! Header */
+.header{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 1350px;
+  padding: 30px;
+  display: flex;
+  z-index: 3;
+  /*background: #343233;*/
+}
+
+.menu{
+  width: 100%;
+}
+
+.menu li{display: inline-block;}
+.menu li a{color: #efdab9; padding-top: 15px; padding-right: 40px; display: block;}
+
+.cta{}
+
+.button{padding: 18px 28px; background: #316bff; color: #fff; display: inline-block; border-radius: 4px;}
+
+
+/* ! Hero */
+.hero{
+  position: relative;
+  height: 90vh;
+  display: flex; width: 100%; align-items: center;
+  background: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.9)),
+    url('bg-index.jpg') no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.hero:after{
+  content: ' ';
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0; left: 0;
+  background: #000;
+  opacity: 0.5;
+}
+
+.hero__content{
+  position: relative;
+  width: 100%;
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 30px;
+  z-index: 1;
+}
+
+.hero__content h1, p {color: #efdab9;}
+
+#bg-index-video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 0;
+}
+
+/* ! Cover */
+
+.cover{
+  background: #343233;
+  padding: 100px;
+  display: flex;
+}
+
+.cover__title{
+  width: 200%;
+  align-items: center;
+  padding: 50px;
+  display: flex;
+}
+
+.cover__content{
+  padding: 50px;
+}
+
+.cover__title h3 {color: #efdab9;}
+
+
+/* ! Team */
+
+.team{
+  display: flex;
+  background: #343233;
+}
+
+.grid{
+  width: 100%;
+  height: 100%;
+  padding: 100px;
+  text-align: center;
+}
+
+.grid-fabio__img img{object-fit: cover; width: 100%; height: 100%;border-radius: 100%;}
+
+.grid-fabio__img{
+  width: 200px;
+  height: 200px;
+}
+
+.grid__img{
+  padding-left: 22%;
+}
+
+.grid-fabio__content{
+  padding: 25px;
+  width: 100%;
+  height: 100%;
+}
+
+h3,
+p {color: #efdab9;}
+
+/* ! Prenotazione.jsp */
+.prenotazione{
+  display: flex;
+  height: 100vh;
+  background-color: #343233;
+}
+
+.prenotazione__title{
+  width: 45%;
+  align-items: center;
+  padding: 50px;
+  display: flex;
+}
+
+.prenotazione__name-field{
+  width: 100%;
+}
+
+.prenotazione__text-field{
+  width: 100%;
+  margin-right: 0px;
+}
+.prenotazione__content{
+  width: 100%;
+  display: flex;
+  margin: auto;
+  padding: 10px;
+}
+
+.prenotazione__menu{
+  padding: 50px;
+  padding-top: 40vh;
+}
+
+.prenotazione__button{
+  padding: 40px;
+  padding-top: 50vh;
+}
+
+
+
+
+
+
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}

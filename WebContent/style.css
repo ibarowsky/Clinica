@@ -1,0 +1,116 @@
+body{font-family: 'Inter', sans-serif; font-size: 16px;}
+a{text-decoration: none;}
+
+h1, h2, h3, h4, h5, p{color: #fff; padding-bottom: 30px;}
+
+.big-text{font-size: 70px;font-weight: bold;}
+.med-text{font-size: 40px;}
+.normal-text{font-size: 20px;}
+.small-text{font-size: 14px;}
+
+.intro-text{text-transform: uppercase;font-size: 20px;font-weight: bold;}
+
+.header{
+  width: 100%;
+  position: fixed;
+  top:0;
+  left:50%;
+  transform: translateX(-50%);
+  padding: 30px;
+  display: flex;
+  max-width: 1350px;
+}
+
+.prenot{
+  text-align: center;
+  padding-top: 30px;
+  weight: 100%;
+  background: #343233;
+  height: 30vh;
+}
+
+.prenot h1, p {color: #efdab9;}
+
+.login{
+  display: flex;
+  background: #343233;
+  height: 70vh;
+}
+
+.login__med h1, p {color: #efdab9;}
+
+.login__admin{
+  weight:100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 30px;
+}
+
+.login__admin h1, p {color: #efdab9;}
+
+
+.AggiornaEsito{
+  text-align: center;
+  padding-top: 30px;
+  weight: 100%;
+  background: #343233;
+  height: 30vh;
+}
+
+.Calendario{
+  text-align: center;
+  padding-top: 30px;
+  weight: 100%;
+  background: #343233;
+  height: 30vh;
+}
+
+.Contatta{
+  text-align: center;
+  padding-top: 30px;
+  weight: 100%;
+  background: #343233;
+  height: 30vh;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background: #343233;
+}
+
+ul{
+  position: relative;
+  width:500px;
+  margin: 100px auto 0;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+ul li{
+  display: flex;
+  padding: 10px 20px;
+  color: #fff;
+  margin: 5px 0;
+  transition: .5s;
+  background: #343233;
+  border-radius: 5px;
+}
+
+
+ul li span:nth-child(3){
+    width: 180px;
+}
+
+ul li span:nth-child(2){
+    width: 150px;
+}
+
+ul li span:nth-child(1){
+    width: 120px;
+}
+
+ul li:hover {
+    transform: scale(1.03);
+    background: #ff0000;
+}
