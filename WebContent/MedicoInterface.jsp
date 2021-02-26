@@ -1,8 +1,11 @@
 <%@page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
-<%@page import="BuilderPattern.MedInterface"%>
+<%@page import="createInterfaces.MedInterface"%>
 <!DOCTYPE html>
 <html>
 <head>
+<% if(session.getAttribute("login") == null || session.getAttribute("login") == "") 
+	response.sendRedirect("Home.html");
+%>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -15,25 +18,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-		<%	
-			String doc = MedInterface.BuildMedInterface();
-			out.print(doc);
-		%>
-		
-	<form action="UpdateTampone" method="post">
-	<input type="text" name="idprenot" />
-
-		<fieldset>
-		<legend>Aggiorna Tampone</legend>
-			<select name="esito" >
-				<option value="ela" selected="selected">Elaborazione </option>
-				<option value="pos">Positivo </option>
-				<option value="neg">Negativo </option>
-			</select>
-		</fieldset>
-
-	<input type="submit" value="submit" />
-	</form>
-	
+	<%	
+		String doc = MedInterface.BuildMedInterface();
+		out.print(doc);
+	%>	
 </body>
 </html>

@@ -8,15 +8,15 @@ import java.sql.Date;
 
 	public class CommandBooking implements Command{
 	private Reciver reciver;
-
+	
 	public CommandBooking(Reciver reciver) {
 	    this.reciver = reciver;
 	}
-
-	private String CalcHours(int Cont) {
+	
+	private String CalcolaOrario(int Cont) {
 		switch(Cont) {
 			case 0:	return "08:00";
-			case 1:	return "09:00";
+			case 1:	return "09:00";	
 			case 2:	return "10:00";
 			case 3:	return "11:00";
 			case 4:	return "12:00";
@@ -31,21 +31,21 @@ import java.sql.Date;
 
   @Override
 	public void readDate() {
-	  /* Leggi dal database la prima data utile per una prenotazione
-	   * e mandala al reciver per scriverla nel database.
+	  /* Leggi dal database la prima data utile per una prenotazione 
+	   * e mandala al reciver per scriverla nel database. 
 	   * In un giorno non possono esserci più di 10 prenotazioni.
 	   */
-
-  	// Dichiarazione variabili
-   	Connection con=DB.getConnection();
-   	PreparedStatement p;
+	  
+	  	// Dichiarazione variabili
+	   	Connection con=DB.getConnection();
+	   	PreparedStatement p;
 		Calendar calendar = Calendar.getInstance();
 		Date startDate = new Date(calendar.getTime().getTime());	// Ottieni il giorno del sistema
 		ResultSet rs;
 		int Cont;
 		String orario;
 		// =======================
-
+		
 		try {
 			while(true){
 				p = con.prepareStatement("SELECT COUNT(*) AS CONTATORE FROM PRENOTAZIONE WHERE DATA = ? GROUP BY DATA;");	// Cerca quante prenotazioni ci sono in un giorno
@@ -55,7 +55,7 @@ import java.sql.Date;
 					Cont = rs.getInt("CONTATORE");	// Prendi quel numero
 					System.out.println("Per il giorno " + startDate + " ci sono " + Cont + " prenotazioni.");
 		    		if(Cont < 10){	// Se ci sono meno di 10 prenotazioni in quel giorno
-		    			orario = CalcHours(Cont);
+		    			orario = CalcolaOrario(Cont);
 		    			reciver.writePrenotazione(con, startDate, orario);	// Inserisci la prenotazione nel database
 		    			break;
 		    		}
@@ -64,9 +64,9 @@ import java.sql.Date;
 		    			startDate = new Date(calendar.getTime().getTime());	// Salvalo nella variabile
 		    		}
 			    }
-				else {	// Se il giorno inseito ci sono 0 prenotazioni
+				else {	// Se il giorno inseito ci sono 0 prenotazioni 
 					System.out.println("Per il giorno " + startDate + " ci sono 0 prenotazioni.");
-					orario = CalcHours(0);
+					orario = CalcolaOrario(0);
 					reciver.writePrenotazione(con, startDate, orario);	// Inserisci la prenotazione nel database
 	    			break;
 				}
@@ -74,5 +74,5 @@ import java.sql.Date;
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
-  	}
+  	} 
 }

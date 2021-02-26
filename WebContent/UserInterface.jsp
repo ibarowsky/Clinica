@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
-<%@page import="BuilderPattern.UserInterface"%>
+<%@page import="createInterfaces.UserInterface"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,9 +16,7 @@
 </head>
 <body>
 	<%
-		String fc = (String) session.getAttribute("login");
-		System.out.println(fc);
-		String doc = UserInterface.BuildUserInterface(fc);
+		String doc = UserInterface.BuildUserInterface((String) session.getAttribute("login"));
 		out.print(doc);
 	%>
 </body>

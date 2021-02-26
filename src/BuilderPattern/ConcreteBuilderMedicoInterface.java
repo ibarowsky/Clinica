@@ -42,8 +42,7 @@ public class ConcreteBuilderMedicoInterface extends BuilderLogin{
 		} catch(Exception e) {
 			   e.printStackTrace();
 		}
-	
-		this.doc += "</div></ul>";
+		this.doc += "</div></ul><form action=\"UpdateTampone\" method=\"post\"> <input type=\"text\" name=\"idprenot\" /> <fieldset> <legend>Aggiorna Tampone</legend> <select name=\"esito\" > <option value=\"ela\" selected=\"selected\">Elaborazione </option> <option value=\"pos\">Positivo </option> <option value=\"neg\">Negativo </option> </select> </fieldset> <input type=\"submit\" value=\"submit\" /> </form>";
 	}
 
 	@Override
