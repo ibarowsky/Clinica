@@ -104,3 +104,23 @@ Si tratta di un pattern comportamentale basato su oggetti e viene utilizzato qua
 - [Reciver](https://github.com/ibarowsky/Clinica/blob/main/src/CommandPattern/Reciver.java)
 
 ## State Pattern
+Si tratta di un pattern comportamentale basato su oggetti che viene utilizzato quando il comportamento di un oggetto deve cambiare in base al suo stato.
+
+### Struttura
+- Context: definisce l’interfaccia di interesse del Client e mantiene una instanza della ConcreteState che definisce lo stato corrente
+- State: definisce un interfaccia per incapsulare il comportamento associato con un particolare stato.
+- ConcreteState: ogni sub-classe che implemento un comportamento associato con uno stato.
+
+### Implementazione
+È stato usato per cambiare l’esito dei tamponi da parte del medico. Quest ultimo ha accesso a tutti i tamponi che hanno esito “null” o “in elaborazione”. Ha difatti lui il compito di cambiare l’esito da “null” a “in elaborazione” ai tamponi che sono stati effettivamente fatti e di cambiarli da “in elaborazione” a “positivo” o “negativo” una volta che l'elaborazione del tamone è finito.
+
+### Diagramma
+![state](https://user-images.githubusercontent.com/46711940/109395274-cfb17400-792b-11eb-8ab2-55c1bc469f64.png)
+
+### Riferimenti al codice
+- [UpdateTampone]()
+- [Tampone]()
+- [Stato]()
+- [EsitoInElab]()
+- [EsitoPos]()
+- [EsitoNeg]()
