@@ -11,6 +11,7 @@ Abbia deciso di sviluppare questo progetto su una web app usando un database mys
 
 ## Database
 Il diagramma del Database usato è il seguente:
+
 ![database](https://user-images.githubusercontent.com/46711940/109360507-a939fd00-7887-11eb-8415-a91e00623f5b.png)
 
 I pattern usati per la creazione di questo progetto sono i seguenti:
