@@ -50,6 +50,7 @@ Il Model-View-Controller è un pattern architetturale in grado di separare la lo
 - Controller (Servlet): determina il comportamento dell’applicazione implementando le logiche di controllo. Seleziona quale vista presentare all’utente, in funzione delle sue scelte. Favorisce lo scambio di dati tra Model e View.
 
 ### Diagramma
+![mvc](https://user-images.githubusercontent.com/46711940/109395748-52d3c980-792e-11eb-87cf-dd68dc6d1be2.png)
 
 ### Riferimenti al codice
 - [com.mvc.bean](https://github.com/ibarowsky/Clinica/tree/main/src/com.mvc.bean)
