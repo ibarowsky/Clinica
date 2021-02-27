@@ -28,7 +28,7 @@ La connessione al database viene effettuata tramite il seguente file
 ![database](https://user-images.githubusercontent.com/46711940/109360507-a939fd00-7887-11eb-8415-a91e00623f5b.png)
 
 ### Dump
-[Dump]()
+[Dump](https://github.com/ibarowsky/Clinica/blob/main/database/clinica.sql)
 
 ## Pattern
 I pattern usati per la creazione di questo progetto sono i seguenti:
