@@ -19,7 +19,9 @@ Una persona può rappresentare una, due o anche tutte e tre le figure sopra cita
 Strutturando il database nel seguente modo abbiamo dato possibilità ad un medico di essere anche amministratore e di poter prenotare un tampone.
 La tabella delle prenotazioni tiene tenere traccia di tutti i tamponi effettuati e di quelli ancora da effettuare.
 Non possono esserci più di 10 prenotati in un giorno.
+
 La connessione al database viene effettuata tramite il seguente file
+
 [DB](https://github.com/ibarowsky/Clinica/blob/main/src/com/DB.java)
 
 ### Diagramma
