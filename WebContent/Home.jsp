@@ -1,4 +1,3 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,26 +22,30 @@
 		<h1> Clinica Becuba</h1>
 		</div>
     </div>
-    <form action="LoginController" method="post" >
+    
+
   <div class="login">
- 	     <h1 class="med-text">Effettua il login:</h1><br>
-      <p class="small-text">Codice Fiscale</p><br>
-      <input type="text" name="fc"/>
-      <p class="small-text">Password</p>
- 	
-      <input type="text" name="password"/>
+  <h1>Login:</h1>
+ 	    <form action="LoginController" method="post">
+ 	    	<p> Codice Fiscale: </p>
+ 	    	<input type="text" name="fc">
+ 	    	<p> Password: </p>
+ 	    	<input type="text" name="password">
     	<div class = "loginType">
 			<select name="status" >
-				<option value="User" selected="selected">Utente </option>
+				<option selected disabled> Seleziona: </option>
+				<option value="User"> Utente </option>
 				<option value="Med">Medico </option>
 				<option value="Admin">Amministratore </option>
 			</select>
+			</div>
 
-        <input type="submit" name = "btn_login" value="Invia">
-
+         <input type="submit" name = "btn_login" value="Login">
+      <p> Non sei ancora registrato? Registrati qui:</p>
+   	<div class="cta">
+        <a href="RegistrationInterface.jsp" class="button">Registrati</a>
+      </div>
+	</form>
 	</div>
-  </div>
-</form>
-
 </body>
 </html>

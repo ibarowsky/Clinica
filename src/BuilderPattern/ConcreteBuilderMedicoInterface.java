@@ -12,7 +12,14 @@ public class ConcreteBuilderMedicoInterface extends BuilderLogin{
 	private void makeCalendar(Connection con) {
 		Calendar calendar = Calendar.getInstance();
 		Date startDate = new Date(calendar.getTime().getTime());	// Ottieni il giorno del sistema
-		this.doc += "<div class=\"Calendario\"> <h1 class=\"big-text\">Calendario Prenotazioni:</h1> <ul>";
+		this.doc += "<div class=\"header\">\r\n"
+				+ "  <div class=\"cta\">\r\n"
+				+ "      <a href=\"Home.jsp\" class=\"button\"> Home</a>\r\n"
+				+ "    </div>\r\n"
+				+ "  	<div class=\"nome\">\r\n"
+				+ "		<h1> Clinica Becuba</h1>\r\n"
+				+ "		</div>\r\n"
+				+ "    </div> <div class=\"Calendario\"> <h1 class=\"big-text\">Prenotazioni del giorno:</h1> <ul>";
 
 	    try {
 	    	PreparedStatement p = con.prepareStatement("SELECT NOME, COGNOME, ORA FROM PRENOTAZIONE PR JOIN PERSONA P ON PR.CF = P.CF WHERE DATA = ? ORDER BY ORA;");
@@ -31,13 +38,22 @@ public class ConcreteBuilderMedicoInterface extends BuilderLogin{
 	}
 
 	private void makeUpdateTamponi(Connection con) {
-		this.doc += "<div class=\"UpdateTamponi\"> <h1 class=\"big-text\">Aggiorna Prenotazioni:</h1> <ul>";
+		this.doc += "<div class=\"AggiornaEsito\"> <form action=\"UpdateTampone\" method=\"post\"> <input type=\"text\" name=\"idprenot\" /> <select name=\"esito\" >\r\n"
+				+ "				<option selected disabled> Seleziona: </option>\r\n"
+				+ "				<option value=\"ela\">Elaborazione </option>\r\n"
+				+ "				<option value=\"pos\">Positivo </option>\r\n"
+				+ "				<option value=\"neg\">Negativo </option>\r\n"
+				+ "			</select>\r\n"
+				+ "	<input type=\"submit\" value=\"Invia\" />\r\n"
+				+ "	</form>\r\n"
+				+ "	</div><ul>";
 		try {
-		   	PreparedStatement p = con.prepareStatement("SELECT ID, CF FROM PRENOTAZIONE WHERE ESITO IS NULL OR ESITO = \"ela\";");
+		   	PreparedStatement p = con.prepareStatement("SELECT ID, CF, ESITO FROM PRENOTAZIONE WHERE ESITO IS NULL OR ESITO = \"ela\";");
 		    ResultSet rs = p.executeQuery();
 		    while(rs.next()){
-		        this.doc += ("<li> <span class=\"nome\">" + rs.getString("ID") +"</span>");
-		        this.doc += ("<span class=\"cognome\">" + rs.getString("CF") +"</span></li>");
+		        this.doc += ("<li> <span class=\"id\">" + rs.getString("ID") +"</span>");
+		        this.doc += ("<span class=\"cf\">" + rs.getString("CF") +"</span>");
+		        this.doc += ("<span class=\"cf\">" + rs.getString("ESITO") +"</span></li>");
 		    }
 		} catch(Exception e) {
 			   e.printStackTrace();

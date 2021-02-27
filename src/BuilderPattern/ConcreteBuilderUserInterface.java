@@ -13,13 +13,16 @@ public class ConcreteBuilderUserInterface extends BuilderLogin{
 	public ConcreteBuilderUserInterface(String fc) {
 		this.fc = fc;
 	}
-	
-	private void makeBookingButton() {
-		this.doc += "<div class=\"header\"> <div class=\"cta\"> <a href=\"UserInterface.jsp\" class=\"button\"> Home</a> </div> <div class=\"nome\"> <h1> Clinica Becuba</h1> </div>  </div> <div class=\"booking\"> <form action=\"BookingSwab\" method=\"post\"> <input type=\"submit\" value=\"Prenota\"> </form> </div>";
-	}
-	
+
 	private void makeBookingCalendar(Connection con) {
-		this.doc += "<div class=\"Calendario\"> <h1 class=\"big-text\">Calendario Prenotazioni:</h1> <ul>";
+		this.doc += "<div class=\"header\">\r\n"
+				+ "  <div class=\"cta\">\r\n"
+				+ "      <a href=\"Home.jsp\" class=\"button\"> Home</a>\r\n"
+				+ "    </div>\r\n"
+				+ "  	<div class=\"nome\">\r\n"
+				+ "		<h1> Clinica Becuba</h1>\r\n"
+				+ "		</div>\r\n"
+				+ "    </div> <div class=\"Calendario\"> <h1 class=\"big-text\">Calendario Prenotazioni:</h1> <ul>";
 		try {
 			PreparedStatement p = con.prepareStatement("SELECT DATA, ORA, ESITO FROM PRENOTAZIONE WHERE CF = ?;");
 		    p.setString(1,fc);
@@ -27,12 +30,20 @@ public class ConcreteBuilderUserInterface extends BuilderLogin{
 		    while(rs.next()) {
 		    	this.doc += ("<li> <span class=\"nome\">" + rs.getString("DATA") +"</span>");
 		        this.doc += ("<span class=\"cognome\">" + rs.getString("ORA") +"</span>");
-		        this.doc += ("<span class=\"ora\">" + rs.getString("ESITO") +"</span> </li>");
+		        this.doc += ("<span class=\"ora\">" + rs.getString("ESITO") +"</span> </li> ");
 		    }
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
 		this.doc += "</div></ul>";
+	}
+	
+	
+	private void makeBookingButton() {
+		this.doc += "<div class=\"booking\">\r\n"
+				+ "  	<h1>Prenota il tuo tampone:</h1>\r\n"
+				+ "		<form action=\"BookingSwab\" method=\"post\">\r\n"
+				+ "		<input type=\"submit\" value=\"Prenota\">";
 	}
 	
 	@Override

@@ -33,7 +33,7 @@ import java.sql.Date;
 	public void readDate() {
 	  /* Leggi dal database la prima data utile per una prenotazione 
 	   * e mandala al reciver per scriverla nel database. 
-	   * In un giorno non possono esserci piÃ¹ di 10 prenotazioni.
+	   * In un giorno non possono esserci più di 10 prenotazioni.
 	   */
 	  
 	  	// Dichiarazione variabili

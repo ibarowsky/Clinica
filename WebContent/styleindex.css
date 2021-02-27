@@ -9,6 +9,7 @@ h1, h2, h3, h4, h5, p{color: #fff; padding-bottom: 30px;}
 .normal-text{font-size: 20px;}
 .small-text{font-size: 14px;}
 
+
 .intro-text{text-transform: uppercase;font-size: 20px;font-weight: bold;}
 
 
@@ -31,11 +32,11 @@ h1, h2, h3, h4, h5, p{color: #fff; padding-bottom: 30px;}
 }
 
 .menu li{display: inline-block;}
-.menu li a{color: #efdab9; padding-top: 15px; padding-right: 40px; display: block;}
+.menu li a{color: #fff; padding-top: 15px; padding-right: 40px; display: block;}
 
 .cta{}
 
-.button{padding: 18px 28px; background: #316bff; color: #fff; display: inline-block; border-radius: 4px;}
+.button{padding: 18px 28px; background: #6FBEC3; color: #fff; display: inline-block; border-radius: 4px;}
 
 
 /* ! Hero */
@@ -69,7 +70,7 @@ h1, h2, h3, h4, h5, p{color: #fff; padding-bottom: 30px;}
   z-index: 1;
 }
 
-.hero__content h1, p {color: #efdab9;}
+.hero__content h1, p {color: #fff;}
 
 #bg-index-video{
   position: absolute;
@@ -83,7 +84,7 @@ h1, h2, h3, h4, h5, p{color: #fff; padding-bottom: 30px;}
 /* ! Cover */
 
 .cover{
-  background: #343233;
+  background: #6FBEC3;
   padding: 100px;
   display: flex;
 }
@@ -99,14 +100,14 @@ h1, h2, h3, h4, h5, p{color: #fff; padding-bottom: 30px;}
   padding: 50px;
 }
 
-.cover__title h3 {color: #efdab9;}
+.cover__title h3 {color: #fff;}
 
 
 /* ! Team */
 
 .team{
   display: flex;
-  background: #343233;
+  background: #6FBEC3;
 }
 
 .grid{
@@ -134,51 +135,7 @@ h1, h2, h3, h4, h5, p{color: #fff; padding-bottom: 30px;}
 }
 
 h3,
-p {color: #efdab9;}
-
-/* ! Prenotazione.jsp */
-.prenotazione{
-  display: flex;
-  height: 100vh;
-  background-color: #343233;
-}
-
-.prenotazione__title{
-  width: 45%;
-  align-items: center;
-  padding: 50px;
-  display: flex;
-}
-
-.prenotazione__name-field{
-  width: 100%;
-}
-
-.prenotazione__text-field{
-  width: 100%;
-  margin-right: 0px;
-}
-.prenotazione__content{
-  width: 100%;
-  display: flex;
-  margin: auto;
-  padding: 10px;
-}
-
-.prenotazione__menu{
-  padding: 50px;
-  padding-top: 40vh;
-}
-
-.prenotazione__button{
-  padding: 40px;
-  padding-top: 50vh;
-}
-
-
-
-
-
+p {color: #fff;}
 
 
 *,

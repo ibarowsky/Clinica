@@ -146,12 +146,10 @@ input[type=submit]:hover{
 	left: 40%;
 	position: absolute;
 	padding: 30px 30px;
-	padding-top: 200px;
+	margin-top: 100px;
 	box-sizing: border-box;
 	text-align: center;
 }
-
-
 
 
 .AggiornaEsito{
@@ -171,10 +169,11 @@ input[type=submit]:hover{
 ul{
   height: 100%;
   position: relative;
-  width: 350px;
+  width: 400px;
   margin: auto;
   padding: 10px;
   box-sizing: border-box;
+  text-align: center;
 }
 
 ul li{
@@ -191,14 +190,18 @@ ul li{
 
 ul li span:nth-child(3){
 	width: 80px;
+	margin: 5px;
+	text-align: right;
 }
 
 ul li span:nth-child(2){
 	width: 150px;
+	margin: 5px;
 }
 
 ul li span:nth-child(1){
-	width: 120px;
+	width: 70px;
+	margin: 5px;
 }
 
 ul li:hover {
@@ -261,7 +264,6 @@ ul li:hover {
 	background-color: #6FBEC3;
 }
 
-
 .report{
 	padding-top: 300px;
 	margin-left: 40%;
@@ -274,10 +276,22 @@ ul li:hover {
 	appearance: none;
 	}
 
-h1{
-	font-size: 40px;font-weight: bold;
+.report select{
+	background-color: #6FBEC3;
+	color: #fff;
+	width: 150px;
+	height: 30px;
+	border: none;
+	box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4);
+	outline: none;
+	-webkit-appearence: button;
 }
 
-.booking input[type=submit]{
-    padding-top: 100px;
+.report:before{
+	content:'';
+	background-color: #6FBEC3;
+}
+
+h1{
+	font-size: 40px;font-weight: bold;
 }
