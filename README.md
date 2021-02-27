@@ -31,5 +31,10 @@ Questo pattern consente di utilizzare un Client che non debba essere a conoscenz
 ### Diagramma
 ![database](https://user-images.githubusercontent.com/46711940/109360507-a939fd00-7887-11eb-8415-a91e00623f5b.png)
 
-### Riferimenti di codice:
+### Riferimenti al codice:
 - [BuilderLogin](https://github.com/ibarowsky/Clinica/blob/main/src/BuilderPattern/BuilderLogin.java).
+- [InterDirector]
+- [ConcreteBuilderAdminInterface]
+- [ConcreteBuilderMedicoInterface]
+- [ConcreteBuilderUserInterface]
+- [Interface]
