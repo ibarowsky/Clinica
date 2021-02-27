@@ -14,6 +14,7 @@ Una persona può specializzarsi in:
 - Utente;
 - Medico;
 - Amministratore;
+
 Una persona può rappresentare una, due o anche tutte e tre le figure sopra citate.
 Strutturando il database nel seguente modo abbiamo dato possibilità ad un medico di essere anche amministratore e di poter prenotare un tampone.
 La tabella delle prenotazioni tiene tenere traccia di tutti i tamponi effettuati e di quelli ancora da effettuare.
