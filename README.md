@@ -8,6 +8,11 @@ L'amministratore può aggiungere o eliminare un medico e inoltre può stampare l
 Abbia deciso di sviluppare questo progetto su una web app usando un database mysql e il server apache tomcat.
 
 # Note di Sviluppo
+
+## Database
+Il diagramma del Database usato è il seguente:
+![database](https://user-images.githubusercontent.com/46711940/109360507-a939fd00-7887-11eb-8415-a91e00623f5b.png)
+
 I pattern usati per la creazione di questo progetto sono i seguenti:
 - Builder;
 - Command;
@@ -29,7 +34,7 @@ Questo pattern consente di utilizzare un Client che non debba essere a conoscenz
 É stato usato per il login sulla web app. Dal momento che ci sono 3 tipi diversi di utenti (admin, medico, utente), il builder ci permette di costruire l’interfaccia semplicemente istanziando l’oggetto che identifica il tipo di utente che si sta loggando.
 
 ### Diagramma
-![database](https://user-images.githubusercontent.com/46711940/109360507-a939fd00-7887-11eb-8415-a91e00623f5b.png)
+
 
 ### Riferimenti al codice:
 - [BuilderLogin](https://github.com/ibarowsky/Clinica/blob/main/src/BuilderPattern/BuilderLogin.java).
