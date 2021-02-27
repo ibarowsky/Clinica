@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<% if(session.getAttribute("login") == null || session.getAttribute("login") == "")
+<% if(session.getAttribute("login") == null || session.getAttribute("login") == "") 
 	response.sendRedirect("Home.jsp");
 %>
 <meta charset="ISO-8859-1">

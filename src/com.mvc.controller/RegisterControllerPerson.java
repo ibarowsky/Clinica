@@ -48,7 +48,7 @@ public class RegisterControllerPerson extends HttpServlet {
             
             if(registerPerson.equals("SUCCESS REGISTER") && registerUser.equals("SUCCESS REGISTER")) { //check calling authorizeRegister() function receive "SUCCESS REGISTER" string message after redirect to index.jsp page
                 //request.setAttribute("RegiseterSuccessMsg",registerValidate); //apply register successfully message "RegiseterSuccessMsg"
-                RequestDispatcher rd=request.getRequestDispatcher("Home.html"); //redirect to index.jsp page
+                RequestDispatcher rd=request.getRequestDispatcher("Home.jsp"); //redirect to index.jsp page
                 rd.forward(request, response);
             }
             else {

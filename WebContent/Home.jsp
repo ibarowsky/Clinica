@@ -17,7 +17,7 @@
 
   <div class="header">
   <div class="cta">
-      <a href="Home.html" class="button"> Home</a>
+      <a href="Home.jsp" class="button"> Home</a>
     </div>
   	<div class="nome">
 		<h1> Clinica Becuba</h1>

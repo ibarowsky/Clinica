@@ -9,15 +9,15 @@ import com.DB;
 public class ConcreteBuilderUserInterface extends BuilderLogin{
 	private String doc;
 	private String fc;
-
+	
 	public ConcreteBuilderUserInterface(String fc) {
 		this.fc = fc;
 	}
-
+	
 	private void makeBookingButton() {
-		this.doc += "<div class=\"header\"> <div class=\"cta\"> <a href=\"UserInterface.jsp\" class=\"button\"> Home</a> </div> <div class=\"nome\"> <h1> Clinica Becuba</h1> </div>  </div> <div class=\"booking\"> <h1>Prenota il tuo tampone:</h1> <form action=\"BookingSwab\" method=\"post\"> <input type=\"submit\" value=\"Prenota\"> </form> </div>";
+		this.doc += "<div class=\"header\"> <div class=\"cta\"> <a href=\"UserInterface.jsp\" class=\"button\"> Home</a> </div> <div class=\"nome\"> <h1> Clinica Becuba</h1> </div>  </div> <div class=\"booking\"> <form action=\"BookingSwab\" method=\"post\"> <input type=\"submit\" value=\"Prenota\"> </form> </div>";
 	}
-
+	
 	private void makeBookingCalendar(Connection con) {
 		this.doc += "<div class=\"Calendario\"> <h1 class=\"big-text\">Calendario Prenotazioni:</h1> <ul>";
 		try {
@@ -34,7 +34,7 @@ public class ConcreteBuilderUserInterface extends BuilderLogin{
 		}
 		this.doc += "</div></ul>";
 	}
-
+	
 	@Override
 	public void interfacesElements(){
 		Connection con=DB.getConnection();
