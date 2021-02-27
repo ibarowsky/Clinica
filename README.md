@@ -124,3 +124,25 @@ Si tratta di un pattern comportamentale basato su oggetti che viene utilizzato q
 - [EsitoInElab](https://github.com/ibarowsky/Clinica/blob/main/src/StatePattern/EsitoInElab.java)
 - [EsitoPos](https://github.com/ibarowsky/Clinica/blob/main/src/StatePattern/EsitoPos.java)
 - [EsitoNeg](https://github.com/ibarowsky/Clinica/blob/main/src/StatePattern/EsitoNeg.java)
+
+## Strategy Pattern
+Si tratta di un pattern comportamentale basato su oggetti e viene utilizzato per definire una famiglia di metodi, incapsularli e renderli intercambiabili.
+
+### Struttura
+- Strategy: dichiara una interfaccia che verrà invocata dal Context in base all’algoritmo prescelto
+- ConcreteStrategy: effettua l’overwrite del metodo del Context al fine di ritornare l’implementazione dell’algoritmo
+- Context: detiene le informazioni di contesto (dati ed algoritmo da utilizzare) ed ha il compito di invocare l’algoritmo
+
+### Implementazione
+È stato usato per avere un report da parte del admin. I report possono essere giornalieri, settimanali e mensili. A seconda del report scelto, il metodo al suo interno genererà un file pdf da stampare e inviare all’ASL per la raccolta di informazioni e statistiche dei tamponi. 
+
+### Diagramma
+![strategy](https://user-images.githubusercontent.com/46711940/109395552-3daa6b00-792d-11eb-867f-8cc49d7de51c.png)
+
+### Riferimenti al codice
+- [Reports]()
+- [Context]()
+- [StrategyStats]()
+- [dailyReportStats]()
+- [weeklyReportStats]()
+- [monthlyReportStats]()
