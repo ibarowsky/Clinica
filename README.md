@@ -140,9 +140,9 @@ Si tratta di un pattern comportamentale basato su oggetti e viene utilizzato per
 ![strategy](https://user-images.githubusercontent.com/46711940/109395552-3daa6b00-792d-11eb-867f-8cc49d7de51c.png)
 
 ### Riferimenti al codice
-- [Reports]()
-- [Context]()
-- [StrategyStats]()
-- [dailyReportStats]()
-- [weeklyReportStats]()
-- [monthlyReportStats]()
+- [Reports](https://github.com/ibarowsky/Clinica/blob/main/src/StrategyPattern/Reports.java)
+- [Context](https://github.com/ibarowsky/Clinica/blob/main/src/StrategyPattern/Context.java)
+- [StrategyStats](https://github.com/ibarowsky/Clinica/blob/main/src/StrategyPattern/StrategyStats.java)
+- [dailyReportStats](https://github.com/ibarowsky/Clinica/blob/main/src/StrategyPattern/dailyReportStats.java)
+- [weeklyReportStats](https://github.com/ibarowsky/Clinica/blob/main/src/StrategyPattern/weeklyReportStats.java)
+- [monthlyReportStats](https://github.com/ibarowsky/Clinica/blob/main/src/StrategyPattern/monthlyReportStats.java)
