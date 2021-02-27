@@ -56,14 +56,20 @@ Questo pattern consente di utilizzare un Client che non debba essere a conoscenz
 É stato usato per il login sulla web app. Dal momento che ci sono 3 tipi diversi di utenti (admin, medico, utente), il builder ci permette di costruire l’interfaccia semplicemente istanziando l’oggetto che identifica il tipo di utente che si sta loggando.
 
 ### Diagramma
-
+![builder](https://user-images.githubusercontent.com/46711940/109393957-ccff5080-7924-11eb-9162-80bba5083e9e.png)
 
 ### Riferimenti al codice:
-- [BuilderLogin](https://github.com/ibarowsky/Clinica/blob/main/src/BuilderPattern/BuilderLogin.java).
 - [InterDirector](https://github.com/ibarowsky/Clinica/blob/main/src/BuilderPattern/InterfDirector.java)
+- [BuilderLogin](https://github.com/ibarowsky/Clinica/blob/main/src/BuilderPattern/BuilderLogin.java).
 - [ConcreteBuilderAdminInterface](https://github.com/ibarowsky/Clinica/blob/main/src/BuilderPattern/ConcreteBuilderAdminInterface.java)
 - [ConcreteBuilderMedicoInterface](https://github.com/ibarowsky/Clinica/blob/main/src/BuilderPattern/ConcreteBuilderMedicoInterface.java)
 - [ConcreteBuilderUserInterface](https://github.com/ibarowsky/Clinica/blob/main/src/BuilderPattern/ConcreteBuilderUserInterface.java)
 - [Interface](https://github.com/ibarowsky/Clinica/blob/main/src/BuilderPattern/Interface.java)
 
-## 
+## Command Pattern
+Si tratta di un pattern comportamentale basato su oggetti e viene utilizzato quando si ha la necessità di disaccoppiare l’invocazione di un comando dai suoi dettagli implementativi, separando colui che invoca il comando da colui che esegue l’operazione.
+
+### Struttura
+- 
+
+È stato usato per prenotare un tampone da parte dell’utente. Dal momento che, usando le session siamo in grado di sapere chi ha effettuato la richiesta, è necessario inviare semplicemente  cliccare il tasto “prenota il tuo tampone” e i dati relativi all’utente vengono presi dalla tabella degli utenti, per poi essere usati nella tabella di prenotazione.
