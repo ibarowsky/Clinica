@@ -118,9 +118,9 @@ Si tratta di un pattern comportamentale basato su oggetti che viene utilizzato q
 ![state](https://user-images.githubusercontent.com/46711940/109395274-cfb17400-792b-11eb-8ab2-55c1bc469f64.png)
 
 ### Riferimenti al codice
-- [UpdateTampone]()
-- [Tampone]()
-- [Stato]()
-- [EsitoInElab]()
-- [EsitoPos]()
-- [EsitoNeg]()
+- [UpdateTampone](https://github.com/ibarowsky/Clinica/blob/main/src/StatePattern/UpdateTampone.java)
+- [Tampone](https://github.com/ibarowsky/Clinica/blob/main/src/StatePattern/Tampone.java)
+- [Stato](https://github.com/ibarowsky/Clinica/blob/main/src/StatePattern/Stato.java)
+- [EsitoInElab](https://github.com/ibarowsky/Clinica/blob/main/src/StatePattern/EsitoInElab.java)
+- [EsitoPos](https://github.com/ibarowsky/Clinica/blob/main/src/StatePattern/EsitoPos.java)
+- [EsitoNeg](https://github.com/ibarowsky/Clinica/blob/main/src/StatePattern/EsitoNeg.java)
