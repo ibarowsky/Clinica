@@ -92,8 +92,10 @@ Si tratta di un pattern comportamentale basato su oggetti e viene utilizzato qua
 ![Diagramma1](https://user-images.githubusercontent.com/46711940/109394242-4cd9ea80-7926-11eb-9abb-9635429a0ced.png)
 
 ### Riferimenti al codice
-- [BookingSwab]
-- [InvokerBooking]
-- [Command]
-- [CommandBooking]
-- [Reciver] 
+- [BookingSwab](https://github.com/ibarowsky/Clinica/blob/main/src/CommandPattern/BookingSwab.java)
+- [InvokerBooking](https://github.com/ibarowsky/Clinica/blob/main/src/CommandPattern/InvokerBooking.java)
+- [Command](https://github.com/ibarowsky/Clinica/blob/main/src/CommandPattern/Command.java)
+- [CommandBooking](https://github.com/ibarowsky/Clinica/blob/main/src/CommandPattern/CommandBooking.java)
+- [Reciver](https://github.com/ibarowsky/Clinica/blob/main/src/CommandPattern/Reciver.java)
+
+## State Pattern
