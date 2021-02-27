@@ -38,9 +38,9 @@ Il Model-View-Controller è un pattern architetturale in grado di separare la lo
 ### Diagramma
 
 ### Riferimenti al codice
-- [com.mvc.bean](https://github.com/ibarowsky/Clinica/blob/main/src/ConcreteBuilderAdminInterface.java)
-- [com.mvc.controller](https://github.com/ibarowsky/Clinica/blob/main/src/BuilderPattern/ConcreteBuilderAdminInterface.java)
-- [com.mvc.dao](https://github.com/ibarowsky/Clinica/blob/main/src/BuilderPattern/ConcreteBuilderAdminInterface.java)
+- [com.mvc.bean](https://github.com/ibarowsky/Clinica/tree/main/src/com.mvc.bean)
+- [com.mvc.controller](https://github.com/ibarowsky/Clinica/tree/main/src/com.mvc.controller)
+- [com.mvc.dao](https://github.com/ibarowsky/Clinica/tree/main/src/com.mvc.dao)
 
 ## Builder Pattern
 Il Builder Pattern è un pattern creazionale basato su oggetti e viene utilizzato per creare un oggetto senza doverne conoscere i suoi dettagli implementativi.
