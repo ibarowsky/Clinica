@@ -14,8 +14,8 @@ public class BookingSwab extends HttpServlet {
 		String fc = (String) session.getAttribute("login");
 		/*--------------------------------------------------*/
 		InvokerBooking invokerBook = new InvokerBooking( new CommandBooking( new Reciver( fc )));
-    invokerBook.list();
-    /*--------------------------------------------------*/
-    response.sendRedirect("UserInterface.jsp");
+		invokerBook.list();
+		/*--------------------------------------------------*/
+		response.sendRedirect("UserInterface.jsp");
 	}
 }
